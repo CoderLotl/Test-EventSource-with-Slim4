@@ -1,0 +1,3 @@
+npm create vite client
+cd client
+npm install
