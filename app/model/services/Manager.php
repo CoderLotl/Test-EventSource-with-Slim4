@@ -19,9 +19,10 @@ class Manager
 
     public static function ReturnSaraza($request, $response)
     {
-        $func = function()
+        $text = 'Saraza';
+        $func = function() use ($text)
         {
-            return 'Saraza';
+            return $text;
         };
 
         return ResponseManager::ReturnSSEResponse($request, $response, $func, 1);
